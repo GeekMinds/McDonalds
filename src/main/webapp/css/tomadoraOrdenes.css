@@ -1,0 +1,1882 @@
+/* 
+    Document   : tomadoraOrdenes
+    Created on : Apr 23, 2014, 11:04:59 AM
+    Author     : marvins
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    background: #dcdcdc;
+    height: 1024px;
+    margin: 0 auto;
+    width: 1280px;
+}
+#header{
+    background: #00125e;
+    height: 120px;
+    position: relative;
+}
+#header h1{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    margin-top: 5px;
+    text-align: left;
+    text-transform: uppercase;
+}
+#header span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left: 25px;
+}
+#header span label{
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/*ALMUERZO Y CENA*/
+#header .iconoAlmuerzo{
+    display: block;
+    float: right;
+    height: 67px;
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    width: 98px;
+}
+#header .iconoDesayuno{
+    display: block;
+    float: right;
+    height: 67px;
+    position: absolute;
+    right: 120px;
+    top: 25px;
+    width: 98px;
+}
+#header .desayunoInactivo{
+    background: url(../media/imagenes/tomadoraOrdenes/desayunoInactivo.png) no-repeat center !important;
+}
+#header .almuerzoInactivo{
+    background: url(../media/imagenes/tomadoraOrdenes/almuerzoInactivo.png) no-repeat center !important;
+}
+#header .almuerzoOn{
+    background: url(../media/imagenes/tomadoraOrdenes/almuerzo.png) no-repeat center;
+}
+#header .desayunoOn{
+    background: url(../media/imagenes/tomadoraOrdenes/desayuno.png) no-repeat center;
+}
+/**********************************LADO IZQUIERDO**************************************/
+/*******************************************************************************************/
+.ladoIzquierdo{
+    float: left;
+    height: 904px;
+    position: relative;
+    width: 549px;
+}
+.contenedorDatosOrdenes{
+    display: block;
+    margin-top: 30px;
+}
+.contenedorDatosOrdenes h1{
+    color: #515151;
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.contenedorDatosOrdenes .datosOrdenes{
+    border: 1px #fff solid;
+    margin: 0 auto;
+    width: 512px;
+}
+/*INNER LEFT*/
+.contenedorDatosOrdenes .datosOrdenes .innerLeft{
+    border-right: 1px #fff solid;
+    float: left;
+    width: 310px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerLeft span{
+    color: #232323;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    padding: 9px 6px 9px 10px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerLeft span label.descrip{
+    color: #232323;
+    display: inline-table;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    width: 188px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerLeft span label.identificador{
+    display: inline-block;
+    text-transform: uppercase;
+    width: 105px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerLeft span label.identificador:after{
+    content: ':';
+}
+.contenedorDatosOrdenes .datosOrdenes .innerLeft span:nth-child(2n +1){
+    background: #e5e5e5;
+}
+/*INNER RIGHT*/
+.contenedorDatosOrdenes .datosOrdenes .innerRight{
+    float: left;
+    width: 200px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight span{
+    color: #232323;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    padding: 9px 6px 9px 10px;
+    text-align: left;
+    text-transform: capitalize;
+}
+contenedorDatosOrdenes .datosOrdenes .innerRight span label.descrip{
+    color: #232323;
+    display: inline-table;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    width: 188px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight span label.identificador{
+    display: inline-block;
+    text-transform: uppercase;
+    width: 70px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight span label.identificador:after{
+    content: ':';
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight span:nth-child(2n +1){
+    background: #e5e5e5;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight span:last-child{
+    background: #e5e5e5;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight div .reloj{
+    left: 25px;
+    position: absolute;
+    top: 18px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight div .minutos{
+    color: #4fb2b8;
+    font-family: 'Helvetica';
+    font-size: 21px;
+    font-weight: bold;
+    left: 95px;
+    position: absolute;
+    top: 38px;
+}
+.contenedorDatosOrdenes .datosOrdenes .innerRight div .minutos:after{
+    content: ' min';
+}
+/**********************************TABLA DE ORDENES************************************/
+/*******************************************************************************************/
+.contenedorTablaOrden{
+    display: block;
+    height: 550px;
+    margin-top: 40px;
+    overflow: scroll;
+}
+.tituloDetalle{
+    color: #515151;
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+/**********************************TABLA HEADER************************************/
+/*******************************************************************************************/
+.contenedorTablaOrden .headerOrden{
+    background:  #4fb2b8;
+    clear:both;
+    height: 40px;
+    margin: 0 auto;
+    /*margin-top: 50px;*/
+    width: 514px;
+}
+.contenedorTablaOrden .headerOrden .hCerrar{
+    background: url(../media/imagenes/tomadoraOrdenes/borrarBlanco.png) no-repeat center;
+    border-right: 1px #edecec solid;   
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    width: 39px;
+}
+.contenedorTablaOrden .headerOrden .hMenuSeleccionado{
+	float: left;
+	height: 20px;
+	width: 200px;
+	overflow: hidden;
+	padding-bottom: 5px;
+	padding-top: 5px
+}
+.contenedorTablaOrden .headerOrden .hMenuSeleccionado label{
+    color: #fff;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.contenedorTablaOrden .headerOrden .hContador{
+    border-right: 1px #edecec solid;    
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.contenedorTablaOrden .headerOrden .hContador input[type="text"]{
+    border: none;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: bold;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 7px;
+    width: 24px;
+}
+.contenedorTablaOrden .headerOrden .hContador input[type="text"]:focus{
+    outline: none;
+}
+.contenedorTablaOrden .headerOrden .hSuma{
+    background: url(../media/imagenes/tomadoraOrdenes/iconoMas.png) no-repeat center;
+    border-right: 1px #edecec solid;  
+    cursor: pointer;
+    float: left;
+    height: 40px;
+    width: 39px;
+}
+.contenedorTablaOrden .headerOrden .hRest{
+    background: url(../media/imagenes/tomadoraOrdenes/iconoMenos.png) no-repeat center;
+    cursor: pointer;
+    border-right: 1px #edecec solid;   
+    float: left;
+    height: 40px;
+    width: 39px;
+}
+.contenedorTablaOrden .headerOrden .hEdit{
+    background: url(../media/imagenes/tomadoraOrdenes/lapiz.png) no-repeat center;
+    cursor: pointer;
+    border-right: 1px #edecec solid;   
+    float: left;
+    height: 40px;
+    width: 39px;
+}
+.contenedorTablaOrden .headerOrden .hCosto{
+    float: left;
+    height: 40px;
+    width: 111px;
+}
+.contenedorTablaOrden .headerOrden .hCosto label{
+    color: #fff;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.contenedorTablaOrden .headerOrden .hCosto label:before{
+    content: 'Q.';
+}
+/**********************************EL DETALLE DE LA ORDEN************************************/
+/*******************************************************************************************/
+.contenedorTablaOrden .ordenDetallada{
+	clear: both;
+    height: 40px;
+    margin: 0 auto;
+    width: 514px;
+}
+.contenedorTablaOrden .ordenDetallada .menuElegido .borrarElegido{
+    background: url(../media/imagenes/tomadoraOrdenes/borrarCeleste.png) no-repeat center;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.contenedorTablaOrden .ordenDetallada .menuElegido .nombreElegido{
+	color: #1e1e1e;
+	display: block;
+	font-family: 'Helvetica';
+	font-size: 12px;
+	font-weight: normal;
+	float: left;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+	width: 84px;
+	word-wrap: break-word;
+}
+.papasFritas{
+    background: #f4f3f3;
+    float: left;
+    width: 110px;
+}
+.selectPapas{
+    background: url(../media/imagenes/tomadoraOrdenes/drop.png) #FFFCFC no-repeat 95% center;
+    border-right: 1px #ccc solid;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    float: left;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    padding-top: 13px;
+}
+.bebidas{
+    background: #f4f3f3;
+    float: left;
+    width: 117px;
+}
+.selectBebidas{
+    background: url(../media/imagenes/tomadoraOrdenes/drop.png) #FFFCFC no-repeat 95% center;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    float: left;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    padding-top: 13px;
+}
+.contenedorTablaOrden .ordenDetallada .menuElegido .iconoLista{
+    background: url(../media/imagenes/tomadoraOrdenes/lista.png) center no-repeat #d8d7d7;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+.contenedorTablaOrden .ordenDetallada .menuElegido .precioMenu{
+    float: left;
+    height: 40px;
+    width: 111px;
+}
+.contenedorTablaOrden .ordenDetallada .menuElegido .precioMenu label{
+    color:  #1e1e1e;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 13.5px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}.contenedorTablaOrden .ordenDetallada .menuElegido .precioMenu label:before{
+	content:'Q.'
+}
+/**********************************PEDIDO ESPECIAL***************************************/
+/*******************************************************************************************/
+.pedidoEspecialDetalle{
+    background: #b1b0b0;
+    margin: 0 auto;
+    width: 514px;
+}
+.pedidoEspecialDetalle div{
+    display: block;
+    float: left;
+    height: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 45%;
+}
+.pedidoEspecialDetalle div label,.pedidoEspecialDetalle div span{
+    color: #1e1e1e;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    float: left;
+    padding-top: 5px;
+}
+.pedidoEspecialDetalle div span{
+    float: right!important;
+}
+.pedidoEspecialDetalle div span:before{
+    content: 'Q.';
+}
+.pedidoEspecialDetalle div:nth-child(2n){
+    float: right;
+}
+.pagoTotalOrden{
+    background: #fff;
+    bottom: 20px;
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    width: 514px;
+}
+.pagoTotalOrden label.total{
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    padding: 12px 0px 0px 10px;
+    text-transform: uppercase;
+}
+.pagoTotalOrden label.pago{
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    float: right;
+    font-weight: bold;
+    padding: 12px 10px 0px 0px;
+    text-transform: uppercase;
+}
+.pagoTotalOrden label.pago:before{
+	content: 'Q.'
+}
+/**********************************LADO DERECHO***************************************/
+/*******************************************************************************************/
+.ladoDerecho{
+    background:  #fff;
+    float: left;
+    height: 904px;
+    position: relative;
+    width: 731px;
+}
+/**********************************SWITCH***************************************/
+/*******************************************************************************************/
+.contenedorSwitch{
+    background: #fff;
+    display: block;
+    height: 45px;
+    position: relative;
+}
+.contenedorSwitch span{
+    background: url(../media/imagenes/tomadoraOrdenes/switch.png);
+    cursor: pointer;
+    display: block;
+    height: 22px;
+    position: absolute;
+    top: 11px;
+    left: 142px;
+    width: 84px;
+}
+.contenedorSwitch span a.on{
+    height: 16px;
+    left: 6px;
+    position: absolute;
+    top: 3px;
+    width: 16px;
+}
+.contenedorSwitch span a.off{
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    width: 16px;
+}
+.contenedorSwitch label{
+    color: #1e1e1e;
+    cursor: pointer;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.contenedorSwitch .txOn{
+    position: absolute;
+	top: 11px;
+	left: 60px;
+	z-index: 3;
+}
+.contenedorSwitch .txOff{
+    position: absolute;
+	top: 11px;
+	left: 240px;
+	z-index: 3;
+}
+.contenedorSwitch .aLaCarta{
+    color:  #1e1e1e;
+    cursor: default;
+    display: block;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    right: 260px;
+    top: 11px;
+    text-transform: uppercase;
+}
+#siguienteMenu{
+	height: 29px;
+	position: absolute;
+	right: 30px;
+	top: 8px;
+	width: 20px;
+}
+#regresarMenu{
+	height: 29px;
+	position: absolute;
+	right: 70px;
+	top: 8px;
+	width: 20px;
+}
+
+/**********************************ICONOS***************************************/
+/*******************************************************************************************/
+.contenedorIconos{
+    display: block;
+    height: 85px;
+}
+.contenedorIconos .icono{
+    background: #e7e7e7;
+    border-right: 1px #ccc solid;
+    display: block;
+    float: left;
+    height: 85px;
+    position: relative;
+    width: 120px;
+}
+.contenedorIconos .icono img{
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+.contenedorIconos .icono:last-child{
+    border-right: 0px;
+    width: 123px;
+}
+.nav{
+    display: block;
+    height: 40px;
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+}
+.nav ul li{
+    background: #4fb2b8;
+    border-right: 1px #ccc solid;
+    display: block;
+    float: left;
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 120px;
+}
+.nav ul li:hover{
+    background: #515151;
+}
+.nav ul li:last-child{
+    border-right: none;
+    width: 123px;
+}
+.nav ul li a{
+    color: #fff;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-weight: lighter;
+    padding-top: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav ul li.activo{
+    background: #515151;
+}
+.nav ul li a:nth-child(3){
+	padding-top: 5px;
+}
+/**********************************GRID PRODUCTOS***************************************/
+/*******************************************************************************************/
+.contenedorProductos{
+    background: #fff;
+    display: block;
+    position: relative;
+    height: 586px;
+}
+.contenedorProductos .productos{
+    background: #fff;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    display: block;
+    float: left;
+    height: 145px;
+    position: relative;
+    text-align: center;
+    width: 181px;
+}
+.contenedorProductos .productos img{
+    height: 110px;
+    width: 120px;
+}
+.contenedorProductos .productos .nombreProducto{
+    color: #000;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 9px;
+    font-weight: normal;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.overlayProducto{
+    background: #4b4b4b;
+    display: none;
+    height: 145px;
+    left: 0;
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    width: 181px;
+    z-index: 2;
+
+    transition: all ease-in-out 0.1s;
+    -webkit-transition:  all ease-in-out 0.1s;
+    -moz-transition:  all ease-in-out 0.1s;
+    -o-transition:  all ease-in-out 0.1s;
+}
+.overlayProducto h1{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.overlayProducto label{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.overlayProducto label:before{
+    content: 'Q.';
+}
+.contenedorProductos .productos:hover .overlayProducto{
+    display: block;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition:  all ease-in-out 0.1s;
+    -moz-transition:  all ease-in-out 0.1s;
+    -o-transition:  all ease-in-out 0.1s;
+}
+/*PAGINADOR*/
+.paginadorProductos{
+    display: block;
+    height: 18px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 100px;
+    width: 100px;
+    text-align: center;
+}
+.paginadorProductos .sprite{
+    background: url(../media/imagenes/tomadoraOrdenes/spriteMenu.png)no-repeat 0px 0px;
+    display: block;
+    float: left;
+    margin-left: 10px;
+    height: 18px;
+    width: 18px;
+}
+.paginadorProductos .sprite.activo{
+    background: url(../media/imagenes/tomadoraOrdenes/spriteMenu.png)no-repeat 0px -18px;
+}
+.next{
+    bottom: 0px;
+    height: 91px;
+    position: absolute;
+    right: 0px;
+    width: 96px;
+}
+.cancelar{
+    bottom: 0px;
+    height: 91px;
+    position: absolute;
+    right: 97px;
+    width: 96px;
+}
+/**********************************OBSERVACIONES***************************************/
+/*******************************************************************************************/
+.contenedorObsevaciones{
+    background: #e7e7e7;
+    display: block;
+    height: 90px;;
+    overflow: scroll;
+    width: 537px;
+}
+.contenedorObsevaciones h1{
+    color: #515151;
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    margin-left: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.contenedorObsevaciones p{
+    color: #515151;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    margin-left: 20px;
+    padding: 5px;
+}
+#obsEntega{
+	background: #cfcfcf;
+	border: none;
+	color: #1e1e1e;
+	font-size: 13px;
+	height: 40px;
+	margin: 2px 2px 2px 20px;
+	padding-left: 10px;
+	padding-top: 5px;
+	resize: none;
+	width: 490px;
+}
+#obsEntega:focus{
+	outline: none;
+}
+/**********************************************MODAL FORMA DE PAGO***************************************/
+/******************************************************************************************************************/
+.overlay{
+    background: #4b4b4b;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition:  all ease-in-out 0.1s;
+    -moz-transition:  all ease-in-out 0.1s;
+    -o-transition:  all ease-in-out 0.1s;
+}
+#contenedor{
+    background: #cfcfcf;
+    height: 615px !important;
+    position: absolute !important;
+    width: 700px !important;
+    top: 120px !important;
+}
+#modalFormaPago{
+    display: none;
+    height: 570px;
+    position: relative;
+    width: 700px;
+}
+.headerModal{
+    background: #393d4f;
+    height: 45px;
+}
+.headerModal h1{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 19px;
+    font-weight: 300;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 7px;
+    text-transform: uppercase;
+}
+.headerModal span{
+    background: #e9e9e9;
+    display: block;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+}
+#overlayTomadora{
+    position: absolute !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+#contenedor a.modalCloseImg {
+    background: url(../media/imagenes/general/cerrar.png) no-repeat;
+    width: 28px;
+    height: 30px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+.contenedorModal{
+    height: 100%;
+    position: relative;
+}
+.contenedorModal .confirmar{
+
+}
+input[type=radio].css-checkbox {
+    display:none;
+}
+
+input[type=radio].css-checkbox + label.css-label {
+    padding-left:23px;
+    height:18px; 
+    display:inline-block;
+    line-height:18px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:18px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+input[type=radio].css-checkbox:checked + label.css-label {
+    background-position: 0 -18px;
+}
+label.css-label {
+    background-image:url(../media/imagenes/general/checkbox.png);
+}
+.txtConfirmar{
+    color: #1e1e1e;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 13px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.confirmar{
+    background: #e0e0e0;
+    display: block;
+    padding: 10px;
+}
+#txAreaConfirmar{
+	margin: 2px;
+	width: 493px;
+	height: 35px;
+	padding-left: 10px;
+	padding-top: 5px;
+	background: #cfcfcf;
+	border: none;
+	resize: none;
+	outline: none;
+}
+.observaciones{
+    border-bottom: 1px #fff solid;
+    display: block;
+    /*height: 55px;*/
+    padding: 10px;
+}
+.observaciones h1{
+    color: #232323;
+    display: block; 
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: normal;
+    float: left;
+    padding-top: 10px;
+    text-transform: uppercase;
+    width: 40%;
+}
+.observaciones p{
+    color: #232323;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    float: left;
+    width: 60%;
+}
+.observaciones textarea{
+    background: #e0e0e0;
+    border: none;
+    color: #232323;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    float: left;
+    height: 42px;
+    padding-left: 10px;
+    padding-top: 5px;
+    resize: none;
+    width: 380px;
+}
+.observaciones textarea:focus{
+    outline: none;
+}
+
+.tituloModal{
+    background: #e0e0e0;
+    display: block;
+    padding: 10px;
+}
+.tituloModal h1{
+    color: #1e1e1e;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 13px !important;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+.clr{
+    background: #cfcfcf;
+    display: block;
+    height: 42px;
+    position: relative;
+}
+.clr input[type="text"], .clr input[type="date"]{
+    border: none;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    height: 38px;
+    padding-left: 10px;
+    position: relative;
+    width: 145px;
+}
+.clr input[type="text"]:focus{
+    outline: none;
+}
+.contenedorFormasPago .clr:nth-child(2n){
+    background: #d4d4d4;
+}
+.txtPagos{
+    color: #1e1e1e;
+    display: inline-block;
+    font-family: 'Helvetica';
+    font-size: 13px !important;
+    font-weight: normal;
+    margin-left: 20px;
+    text-transform: capitalize;
+    width: 140px;
+}
+.fechaExpiracion{
+    width: 74px;
+    margin-top: 10px;
+}
+.selectFechaExp{
+    background: #fff url(../media/imagenes/general/dropModal2.png) no-repeat right center;
+    font-family: 'Helvetica';
+    font-size: 13px !important;
+    height: 37px;
+    padding-left: 2px;
+    position: relative;
+    top: -11px;
+    width: 74px;
+}
+.selectFechaExpInner{
+    position: relative;
+    top: 7px;
+}
+.cuadroBlanco{
+    background: #fff;
+    display: inline-block;
+    height: 38px;
+    position: relative;
+    text-align: center;
+    width: 110px;
+}
+.cuadroBlanco label:first-child:after{
+    content: '/';
+}
+.cuadroBlanco label{
+    display: inline-block;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    margin-top: 10px;
+}
+.contenedorBotones{
+    display: block;
+    float: right;
+}
+.contenedorBotones .btnModalPagos{
+    background: #4fb2b8;
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 19px;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#mensajeGrabado{
+	background: #e0e0e0;
+	display: none;
+	height: 570px;
+	width: 700px;
+	left: 0px;
+	margin: 0 auto;
+	right: 0px;
+	position: absolute;
+	top:45px;
+	z-index: 9999;
+}
+#mensajeGrabado h1{
+	color: #1e1e1e;
+	display: block;
+	font-family: 'Oswald';
+	font-size: 32px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 100px;
+}
+#mensajeGrabado .mensajeGrabado{
+	background: #4fb2b8;
+	color: #fff;
+	display: block;
+	font-family: 'Oswald';
+	font-size: 24px;
+	/* float: left; */
+	margin-right: 10px;
+	padding: 6px 11px 6px 11px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0px;
+	margin: 0 auto;
+	right: 1px;
+	width: 95px;
+	bottom: 300px;
+}
+/**********************************************MODAL OPCIONES EDITAR MASIVO***************************************/
+/******************************************************************************************************************/
+#contenedorModalMasivo{
+    background: #cfcfcf;
+    height: 190px !important;
+    position: absolute !important;
+    width: 600px !important;
+}
+ a.modalCloseImg {
+    background: url(../media/imagenes/general/cerrar.png) no-repeat;
+    width: 28px;
+    height: 30px;
+    display: inline;
+    z-index: 3200;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+#contenedorModalMasivo .titulo{
+    background: #dedede;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+#modalEditarMasivo{
+    display: none;
+}
+#contenedorModalMasivo .opcionesMasivo{
+    color: #1e1e1e;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    font-weight: bold;
+    float: left;
+    padding: 17px 0px 17px 0px;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#contenedorModalMasivo .opcionesMasivo:nth-child(1){
+    background: #dddddd;
+}
+#contenedorModalMasivo .opcionesMasivo:nth-child(2){
+    background: #d3d3d3;
+}
+#contenedorModalMasivo .opcionesMasivo:nth-child(3){
+   background: #d3d3d3;
+}
+#contenedorModalMasivo .opcionesMasivo:nth-child(4){
+      background: #dddddd;
+}
+#contenedorModalMasivo .opcionesMasivo.btnDesactivado{
+    color: #a6a6a6;
+    pointer-events: none;
+}
+/********************************************MODAL RECETAS/ADICIONALES MASIVO***************************************/
+/********************************************************************************************************************************/
+#modalRecetaAdicionales{
+    display: none;
+}
+#contenedorModalRecetas{
+    background: #cfcfcf;
+    height: 760px !important;
+    position: absolute !important;
+    width: 640px !important;
+}
+.contenedorTablaIngredientes{
+    margin-left: 135px;
+    position: relative;
+}
+.tablaIngredientes{
+    /*background: #edecec;*/
+    width: 480px;
+}
+.tablaIngredientes .ingrediente{
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    float: left;
+    height: 119px;
+    position: relative;
+    width: 158px;
+}
+.tablaIngredientes .ingrediente .imgProdModal{
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 4px;
+}
+.tablaIngredientes .ingrediente .cntImg{
+    background: #fff;
+    display: block;
+    height: 95px;
+    width: 158px;
+}
+.tablaIngredientes .ingrediente .cntImg .imgProdModal{
+	
+}
+.tablaIngredientes .ingrediente label{
+    background: #393d4f;
+    color: #fff;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.tablaIngredientes .ingrediente .contenedorAcciones{
+    /*display: none;*/
+    height: 26px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 52px;
+}
+.tablaIngredientes .ingrediente .contenedorAcciones a{
+    display: block;
+    float: left;
+    height: 26px;
+    width: 26px;
+}
+.tablaIngredientes .ingrediente .contenedorAcciones a img{
+    display: block;
+    height: 26px;
+    margin-top:0px;
+    width: 26px;
+}
+.tablaIngredientes .ingrediente .contadorExtras{
+    background: #fff;
+    border: 0px;
+    /*display: none;*/
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-weight: bold;
+    height: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: absolute;
+    right: 6px;
+    top: 96px;
+    z-index: 7;
+    width: 20px;
+}
+.tablaIngredientes .ingrediente:hover .contenedorAcciones{
+    display: block;
+}
+.tablaIngredientes .ingrediente:hover .contadorExtras{
+    display: block;
+}
+.opcionesTabla{
+    display: block;
+    margin-top: 20px;
+    width: 480px;
+}
+.opcionesTabla a{
+    background: #363636;
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: 300;
+    float: left;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 50%;
+}
+.opcionesTabla .activo{
+    background:  #4fb2b8;
+}
+#btnSin{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: -110px;
+    position: absolute;
+    text-decoration: none;
+    top: 46px;
+    width: 110px;
+    z-index: 5;
+}
+#btnSin span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 29px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#btnExtra{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: -110px;
+    position: absolute;
+    text-decoration: none;
+    top: 142px;
+    width: 110px;
+    z-index: 5;
+}
+#btnExtra span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/********************************************MODAL TAMA��O MASIVO***************************************/
+/**********************************************************************************************************************/
+#modalMasivoTamano{
+    display: none;
+}
+#contenedorTamanoMasivo{
+    background: #cfcfcf;
+    height: 379px !important;
+    position: absolute !important;
+    width: 640px !important;
+    overflow:  scroll;
+}
+.contenedorTamanos .separador{
+    border-bottom: 1px #d4d4d4 solid;
+    display: block;
+    height: 70px;
+}
+.contenedorTamanos .separador .icono{
+    background: #e8e8e8;
+    display: block;
+    float: left;
+    height: 69px;
+    text-align: center;
+    width: 123px;
+}
+.contenedorTamanos .separador .icono img{
+    height: 70px;
+    width: 92px;
+}
+.contenedorTamanos .separador h1{
+    color: #232323;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 13px !important;
+    font-weight: normal;
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    width: 185px;
+}
+.contenedorTamanos .separador .txtTamanos{
+    color: #232323;
+    display: inline-block;
+    font-family: 'Helvetica';
+    font-size: 13px !important;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: 25px;
+    text-transform: capitalize;
+    width: 40px;
+}
+/**********************************************MODAL OPCIONES EDITAR MASIVO***************************************/
+/******************************************************************************************************************/
+#modalRecetaAdicionalesCarta{
+    display: none;
+}
+#contenedorModalRecetasCarta{
+    background: #cfcfcf;
+    height: 760px !important;
+    position: absolute !important;
+    width: 640px !important;
+    overflow: scroll;
+}
+#modalRecetaAdicionalesCarta .opcionesTabla{
+    display: block;
+    margin-top: 20px;
+    width: 480px;
+}
+#modalRecetaAdicionalesCarta .opcionesTabla a{
+    background: #363636;
+    border-right: 1px #ccc solid;
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: 300;
+    float: left;
+    height: 60px;
+    padding: 8px 0px 8px 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 159px;
+}
+#modalRecetaAdicionalesCarta .opcionesTabla a img{
+    border: none;
+    height: 62px;
+}
+#modalRecetaAdicionalesCarta .opcionesTabla .activo{
+    background:  #4fb2b8;
+}
+.ingredientesExtras{
+        width: 480px;
+}
+.ingredientesExtras a{
+    background: #363636;
+    border-top: 2px #fff solid;
+  color: #fff;
+  display: block;
+  font-family: 'Oswald';
+  font-size: 20px;
+  font-weight: 300;
+  float: left;
+  padding: 8px 0px 8px 0px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 240px;
+}
+.ingredientesExtras a.activo{
+    background: #4fb2b8;
+}
+ /**********************************************MODAL MENU FAMILIAR*************************************************/
+/****************************************************************************************************************************/
+#modalMenuFamiliar{
+    display: none;
+}
+#contenedorModalMenuFamiliar{
+    background: #cfcfcf;
+    height: 760px !important;
+    position: absolute !important;
+    overflow: scroll;
+    width: 680px !important;
+}
+#modalMenuFamiliar .contenedorTablaIngredientes{
+    margin-left: 20px;
+    margin-top: 125px;
+}
+#modalMenuFamiliar .contenedorTablaIngredientes .tablaIngredientes{
+    width: 640px;
+}
+#modalMenuFamiliar .headerTablaPostres{
+    width: 640px;
+}
+#modalMenuFamiliar .headerTablaPostres ul{
+    margin: 0;
+    padding: 0;
+}
+#modalMenuFamiliar .headerTablaPostres ul li{
+    background: #4fb2b8;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: 300;
+    float: left;
+    height: 70px;
+    list-style: none;
+    position: relative; 
+    text-align: center;
+    width: 158px;
+}
+#modalMenuFamiliar .headerTablaPostres ul li a{
+    color: #fff;
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 158px;
+}
+#modalMenuFamiliar .headerTablaPostres ul li a img{
+    bottom: 0px;
+    position: absolute;
+    left: 3px;
+}
+#modalMenuFamiliar .headerTablaPostres ul li a span{
+    float: right;
+    margin-right: 25px;
+}
+#btnSinPostre{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: 418px;
+    position: absolute;
+    text-decoration: none;
+    top: -96px;
+    width: 110px;
+    z-index: 5;
+    right: 10px;
+}
+#btnSinPostre span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 29px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#btnExtraPostre{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: 529px;
+    position: absolute;
+    text-decoration: none;
+    top: -96px;
+    width: 110px;
+    z-index: 5;
+}
+#btnExtraPostre span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/**********************************************MODAL POSTRE*************************************************/
+/****************************************************************************************************************************/
+#modalPostre{
+    display: none;
+}
+#contenedorModalPostre{
+    background: #cfcfcf;
+    height: 760px !important;
+    position: absolute !important;
+    overflow: scroll;
+    width: 680px !important;
+}
+#modalPostre .contenedorTablaIngredientes{
+    margin-left: 20px;
+    margin-top: 125px;
+}
+#modalPostre .contenedorTablaIngredientes .tablaIngredientes{
+    width: 640px;
+    position: absolute;
+}
+#modalPostre .headerTablaPostres{
+    background: #363636;
+    height: 70px;
+    position: relative;
+    width: 640px;
+}
+#modalPostre .headerTablaPostres img{
+    bottom: 0px;
+    left: 30px;
+    position: absolute;
+}
+#modalPostre .headerTablaPostres span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 130px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#btnExtraPos{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: 529px;
+    position: absolute;
+    text-decoration: none;
+    top: -96px;
+    width: 110px;
+    z-index: 5;
+}
+#btnExtraPos span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/**********************************************MODAL CAJITA FELIZ*************************************************/
+/****************************************************************************************************************************/
+#modalCajitaFeliz{
+    display: none;
+}
+#contenedorModalCajita{
+    background: #cfcfcf;
+    height: 760px !important;
+    position: absolute !important;
+    overflow: scroll;
+    width: 680px !important;
+    top: 50px !important;
+}
+#modalCajitaFeliz .contenedorTablaIngredientes{
+    margin-left: 20px;
+    margin-top: 125px;
+}
+#modalCajitaFeliz .contenedorTablaIngredientes .tablaIngredientes{
+    width: 640px;
+    position: absolute;
+}
+#modalCajitaFeliz .headerTablaPostres{
+    width: 640px;
+}
+#modalCajitaFeliz .headerTablaPostres ul {
+	margin: 0;
+	padding: 0;
+	width: 640px;
+	display: block;
+	height: 72px;
+}
+#modalCajitaFeliz .headerTablaPostres ul li{
+    background: #363636;
+    border_bottom: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: 300;
+    float: left;
+    height: 70px;
+    list-style: none;
+    position: relative; 
+    text-align: center;
+    width: 158px;
+}
+#modalCajitaFeliz .headerTablaPostres ul li a{
+    color: #fff;
+    display: block;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 158px;
+}
+#modalCajitaFeliz .headerTablaPostres ul li a img{
+    bottom: 0px;
+    position: absolute;
+    left: 3px;
+}
+#modalCajitaFeliz .headerTablaPostres ul li a span{
+    /* float: right; */
+    /* margin-right: 25px; */
+    text_align: center
+}
+#btnSinPostre{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: 418px;
+    position: absolute;
+    text-decoration: none;
+    top: -96px;
+    width: 110px;
+    z-index: 5;
+    right: 10px;
+}
+#btnSinPostre span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 29px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#btnExtraPostre{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: 529px;
+    position: absolute;
+    text-decoration: none;
+    top: -96px;
+    width: 110px;
+    z-index: 5;
+}
+#btnExtraPostre span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*MENU ACTIVO*/
+.menuModalActivo{
+    background: #4fb2b8 !important;
+}
+/**********************************************MODAL COMPLEMENTOS*************************************************/
+/****************************************************************************************************************************/
+#modalComplementos{
+    display: none;
+}
+#contenedorModalComplementos{
+    background: #cfcfcf;
+    height: 760px !important;
+    position: absolute !important;
+    overflow: scroll;
+    width: 680px !important;
+}
+#modalComplementos .contenedorTablaIngredientes{
+    margin-left: 20px;
+    margin-top: 125px;
+}
+#modalComplementos .contenedorTablaIngredientes .tablaIngredientes{
+    width: 640px;
+    position: absolute;
+}
+#modalComplementos .headerTablaPostres{
+    background: #363636;
+    height: 70px;
+    position: relative;
+    width: 640px;
+}
+#modalComplementos .headerTablaPostres img{
+    bottom: 0px;
+    left: 30px;
+    position: absolute;
+}
+#modalComplementos .headerTablaPostres span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 130px;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#btnExtraPos{
+    background: #393d4f;
+    display: block;
+    height: 95px;
+    left: 529px;
+    position: absolute;
+    text-decoration: none;
+    top: -96px;
+    width: 110px;
+    z-index: 5;
+}
+#btnExtraPos span{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    padding-top: 13px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/******************************************FIXES**************************************/
+.tituloDetalle {
+    color: #515151;
+    font-family: 'Helvetica';
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: 35px;
+    text-transform: uppercase;
+}
+
+.ingrediente.sin .overayIngrediente{
+   background:  rgba(75, 75, 75, 0.9);
+   height: 95px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 158px;
+}
+.ingrediente.extra .overayIngrediente{
+    background:  rgba(79, 178, 184, 0.8);
+   height: 95px;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 158px;
+}
+.contenedorTablaOrden .ordenDetallada .menuElegido .iconoReceta {
+    background: url(../media/imagenes/general/iconoReceta.png) center no-repeat;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+.btnModal{
+    background: #4fb2b8;
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 19px;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.contenedorTablaOrden .ordenDetallada .menuElegido .nombreElegido {
+    /*height: 14px;*/
+}
+.contenedorTablaOrden .ordenDetallada .menuElegido .precioMenu {
+    width: 72px;
+}
+input[type=radio].css-checkbox, input[type=checkbox].css-checkbox {
+    display:none;
+}
+
+input[type=radio].css-checkbox + label.css-label, input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:23px;
+    height:18px; 
+    display:inline-block;
+    line-height:18px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:18px;
+    vertical-align:middle;
+    cursor:pointer;
+}
+input[type=radio].css-checkbox:checked + label.css-label, input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -18px;
+}
+label.css-label {
+    background-image:url(../media/imagenes/general/checkbox.png);
+}
+
+#mensajeGrabad0 .mensajeGrabado{
+	background: #4fb2b8;
+	color: #fff;
+	display: block;
+	font-family: 'Oswald';
+	font-size: 24px;
+	/* float: left; */
+	margin-right: 10px;
+	padding: 6px 11px 6px 11px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0px;
+	margin: 0 auto;
+	right: 1px;
+	width: 95px;
+	bottom: 300px;
+}
+#mensajeGrabado h2{
+	color: #1e1e1e;
+	display: block;
+	font-family: 'Oswald';
+	font-size: 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#modalFormaPago #txAreaConfirmar{
+ background: #cfcfcf;
+ border: none;
+ height: 40px;
+ margin-left: 30px;
+ padding-left: 10px; 
+ resize: none;
+ width: 460px;
+}

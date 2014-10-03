@@ -1,0 +1,186 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/03/2014, 09:33:18 PM
+    Author     : marvinsoto
+*/
+
+#content{
+    background:  #404040 !important;
+}
+.contenedorGeneral .izquierdo{
+    float: left;
+    width: 49%;
+}
+.contenedorGeneral .izquierdo label{
+    background: #404040;
+    border: 2px #ccc solid;
+    color: #fff;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    float: left;
+    height: 32px;
+    padding: 1px;
+    padding-top: 13px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.contenedorGeneral .derecho{
+    float: left;
+    width: 50%;
+}
+.contenedorGeneral .derecho input[type="text"]{
+    background: #fff;
+    border: 2px #ccc solid;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    float: left;
+    height: 44px;
+    padding-left: 15px;
+    width: 300px;
+}
+.contenedorGeneral .derecho input[type="password"]{
+    background: #fff;
+    border: 2px #ccc solid;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    float: left;
+    height: 44px;
+    padding-left: 15px;
+    width: 300px;
+}
+.contenedorGeneral input[type="submit"]{
+    background: #2784ff;
+    border: none;
+    border-bottom: 3px #00125e solid;
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-style: normal;
+    float: right;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#login{
+    margin: 0 auto;
+    width: 630px;
+}
+/******************************custom selec**************************************/
+/********************************************************************************/
+#content .dropdown{
+    background: #fff;
+    height: 50px;
+    width: 100% !important;
+}
+#content .dropdown:hover{
+    background: #f4f4f4;
+}
+#content .dropdown li{
+    background: #fff !important;
+    border-bottom: 1px #ccc solid !important;
+    color: #000 !important;
+    padding: 10px !important;
+    text-transform: capitalize;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+}
+#content .dropdown li:active{
+    background: #fff !important;
+    color: #000;
+}
+#content .dropdown .selected{
+    color: #000;
+    font-family: 'Helvetica';
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+}
+#content .dropdown .selected::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: inset -80px 75px 25px -20px #b7b7b7 !important
+}
+#content .dropdown:hover .selected::after, .dropdown.focus .selected::after {
+    box-shadow: inset -80px 75px 25px -20px #b7b7b7 !important;
+}
+#content .dropdown .carat, .dropdown .carat:after {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    margin-top: -3px;
+    border: 6px solid transparent;
+    border-top: 6px solid #FFF;
+    z-index: 1;
+    -webkit-transform-origin: 50% 20%;
+    -moz-transform-origin: 50% 20%;
+    -ms-transform-origin: 50% 20%;
+    transform-origin: 50% 20%;
+}
+#content .dropdown ul {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 0;
+}
+#content .dropdown div {
+    position: absolute;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 1px;
+    background: #fff;
+    overflow: hidden;
+    /*opacity: 0;*/
+    /* color: #04724E; */
+    border-radius: 5px;
+}
+#content .dropdown:hover div{
+    background: #fff !important;
+}
+#content .dropdown div {
+    /* color: #04724E; */
+}
+#content .dropdown:hover,
+.dropdown.focus{
+    background: #fff !important;
+}
+#content .dropdown.scrollable div::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+
+    box-shadow: inset 0 -50px 30px -35px #b7b7b7 !important;
+}
+
+#content .dropdown.scrollable:hover div::after{
+    box-shadow: inset 0 -50px 30px -35px  #b7b7b7 !important;
+}
+
+#content .dropdown.scrollable.bottom div::after{
+    opacity: 0;
+}

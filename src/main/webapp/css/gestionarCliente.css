@@ -1,0 +1,568 @@
+ 
+/*    Document   : gestionarCliente
+    Created on : Apr 3, 2014, 2:31:20 PM
+    Author     : marvins
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    background: #dcdcdc;
+    height: 1024px;
+    margin: 0 auto;
+    width: 1280px;
+}
+#header{
+    background: #00125e;
+    height: 120px;
+}
+#header h1{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 25px;
+    margin-top: 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+/**********************************lLADO IZQUIERDO**************************************/
+/**************************************************************************************************/
+/*iconos*/
+.ladoIzquierdo{
+    border-right: 1px #fff solid;
+    float: left;
+    height: 904px;
+    width: 639px;
+}
+.ladoIzquierdo div.icono{
+    border: 1px #fff solid;
+    display: block;
+    float: left;
+    height: 90px;
+    text-align: center;
+    width: 90px;
+}
+.ladoIzquierdo div.icono img{
+    margin-top: 12px;
+}
+.ladoIzquierdo div.tituloInformacion{
+    border-bottom: 1px #fff solid;
+    /*border-right: 1px #fff solid;*/
+    border-top:  1px #fff solid;
+    color: #515151;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    float: left;
+    height: 90px;
+    text-transform: uppercase;
+    width: 547px;
+}
+.ladoIzquierdo div.tituloInformacion label{
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 33px;
+}
+.ladoIzquierdo div.tituloInformacion #ingresoTelefonoGes{
+    border: none;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    float: right;
+    height: 31px;
+    margin-top: 27px;
+    margin-right: 20px;
+    padding-left: 5px;
+    width: 275px;
+}
+.ladoIzquierdo .tituloInformacion div.innerInfoLeft{
+    float: left;
+    height: 90px;
+    position: relative;
+    width: 45%;
+}
+.ladoIzquierdo .tituloInformacion div.innerInfoLeft label{
+    display: block;
+    padding-left: 20px;
+    padding-top: 17px;
+    position: relative;
+}
+.ladoIzquierdo .tituloInformacion div.innerInfoLeft span{
+    color: red;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 7px;
+}
+.ladoIzquierdo .tituloInformacion div.innerInfoRight{
+    float: left;
+    height: 90px;
+    position: relative;
+    width: 55%;
+}
+.ladoIzquierdo .tituloInformacion div.innerInfoRight input[type="text"]{
+    border: none;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    height: 31px;
+    margin-top: 8px;
+    padding-left: 5px;
+    width: 275px;
+}
+.ladoIzquierdo .tituloInformacion div.innerInfoRight input[type="date"]{
+    border: none;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    height: 31px;
+    margin-top: 8px;
+    padding-left: 5px;
+    width: 275px;
+}
+.ladoIzquierdo .tituloInformacion div.innerInfoRight input[type="email"]{
+    border: none;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    height: 31px;
+    margin-top: 8px;
+    padding-left: 5px;
+    width: 275px;
+}
+/**********************************HEADER DE SECCIONES**************************************/
+/**************************************************************************************************/
+ .headerSeccion{
+    background: #0025c7;
+    clear: both;
+    display: block;
+    height: 75px;
+}
+ .headerSeccion .iconoHeader{
+    background: #00125e;
+    float: left;
+    height: 75px;
+    text-align: center;
+    width: 92px;
+}
+ .headerSeccion .iconoHeader img{
+    margin-top: 19px;
+}
+ .headerSeccion .textoHeader h1{
+    color: #fff;
+    display: block;
+    font-family: 'Oswald';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding-top: 21px;
+    text-align: left;
+    text-transform: uppercase;
+}
+ .headerSeccion .textoHeader{
+    display: block;
+    float: left;
+    height: 75px;
+    padding-left: 40px;
+}
+.contenedorFacturacion{
+    display: block;
+}
+.contenedorFacturacion .innerInfoLeft{
+    float: left;
+    height: 125px;
+    position: relative;
+    width: 45%;
+}
+.contenedorFacturacion .innerInfoRight{
+    float: left;
+    height: 125px;
+    position: relative;
+    width: 55%;
+}
+.contenedorFacturacion .innerInfoLeft label{
+    color: #515151;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 30px;
+    position: relative;
+}
+.contenedorFacturacion .innerInfoRight input[type="text"]{
+    border: none;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    height: 31px;
+    margin-top: 19px;
+    padding-left: 5px;
+    width: 325px;
+}
+.contenedorDatosRestaurante{
+    display: block;
+}
+.contenedorDatosRestaurante #direccionRestaurante{
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 255px;
+}
+.contenedorDatosRestaurante .selectRestaurante{
+    background: #bcbcbc url(../media/imagenes/gestionarCliente/dropdown.png) center right no-repeat ;
+    border:  1px #fff solid;
+    color: #232323;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 25px;
+    padding: 6px;
+    padding-left: 25px;
+    width: 245px;
+}
+.contenedorDatosRestaurante .tiempoEntrega{
+    color: #515151;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 35px;
+    text-transform: uppercase;
+}
+.contenedorDatosRestaurante .info{
+    color: #515151;
+    font-family: 'Helvetica';
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.contenedorDatosRestaurante textarea{
+    border: none;
+    color: #515151;
+    font-family: 'Helvetica';
+    font-size: 14px;
+    height: 180px;
+    margin-left: 30px;
+    resize: none;
+    width: 90%;
+}
+/******************************************LADO DERECHO**************************************/
+/**************************************************************************************************/
+.ladoDerecho{
+    float: left;
+    height: 905px;
+    position: relative;
+    width: 50%;
+}
+.ladoDerecho .direccionesAsociadas .separadorDirecciones{
+    display: block;
+    height: 60px;
+    width: 100%;
+}
+.ladoDerecho .direccionesAsociadas .separadorDirecciones:first-child{
+    margin-top: 40px;
+}
+.ladoDerecho .direccionesAsociadas .separadorDirecciones label{
+    color: #515151;
+    font-family: 'Helvetica';
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.ladoDerecho .direccionesAsociadas .separadorDirecciones input[type="text"]{
+    border: none;
+    color: #515151;
+    font-family: 'Helvetica';
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    float: right;
+    height: 31px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    width: 420px;
+}
+.ladoDerecho .direccionesAsociadas .separadorDirecciones select{
+    color: #232323;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 6px;
+    right: 20px;
+    width: 418px;
+}
+.ladoDerecho .direccionesAsociadas .separadorDirecciones .selectDireccionesCliente{
+    background: #bcbcbc url(../media/imagenes/gestionarCliente/dropdown.png) center right no-repeat ;
+    border:  1px #fff solid;
+    color: #232323;
+    font-family: 'Helvetica';
+    font-size: 15px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 6px;
+    padding-left: 25px;
+    width: 398px;
+}
+.paginadorDirecciones{
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+    width: 160px;
+}
+.paginadorDirecciones a{
+    text-decoration: none;
+}
+.paginadorDirecciones .primero{
+    color: #515151;
+    font-family: 'Oswald';
+    font-size: 16px;
+    left: 0;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+.paginadorDirecciones .primero:after{
+    content: '/';
+}
+.paginadorDirecciones .segundo{
+    color: #515151;
+    font-family: 'Oswald';
+    font-size: 16px;
+    left: 18px;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+.paginadorDirecciones .primero{
+    color: #515151;
+    font-family: 'Oswald';
+    font-size: 16px;
+    left: 0;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+.paginadorDirecciones #prev{
+    left: 0;
+    position: absolute;
+    z-index: 3;
+}
+.paginadorDirecciones #next{
+    position: absolute;
+    right: 0;
+    z-index: 3;
+}
+#cancelar{
+    bottom: 0;
+    position: absolute;
+    right: 97px;
+}
+#guardar{
+    bottom: 0px;
+    position: absolute;
+    right: 0;
+}
+.carouselHorizontal {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+.carouselHorizontalElemento {
+    width: 200%;
+    z-index: 1;
+    overflow: hidden;
+}
+.direccionesAsociadas {
+    width: 640px;
+    float: left;
+    position: relative;
+}
+/******************************************FANCY SELECT GESTIONAR CLIENTE**************************************/
+/**************************************************************************************************************/
+.separadorDirecciones div.fancy-select {
+    position: relative;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    font-size: 13px;
+    float: right;
+    color: #46565D;
+    width: 440px !important;
+    margin-top: 15px;
+    height: 40px;
+}
+
+.separadorDirecciones div.fancy-select.disabled {
+    opacity: 0.5;
+}
+
+ .separadorDirecciones div.fancy-select select:focus + div.trigger {
+/*    box-shadow: 0 0 0 2px #4B5468;*/
+}
+
+.separadorDirecciones div.fancy-select select:focus + div.trigger.open {
+    box-shadow: none;
+}
+
+.separadorDirecciones div.fancy-select div.trigger {
+    background: url(../media/imagenes/tomadoraOrdenes/drop.png) #bcbcbc no-repeat 95% center;
+    border: 1px #fff solid;
+    display: block;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+    height: 10px;
+    margin-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 416px;
+    transition: all 240ms ease-out;
+    -webkit-transition: all 240ms ease-out;
+    -moz-transition: all 240ms ease-out;
+    -ms-transition: all 240ms ease-out;
+    -o-transition: all 240ms ease-out;
+}
+
+.separadorDirecciones div.fancy-select div.trigger:after {
+/*    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #4B5468;
+    top: 20px;
+    right: 9px;*/
+}
+
+.separadorDirecciones div.fancy-select div.trigger.open {
+    background: url(../media/imagenes/tomadoraOrdenes/drop.png) #FFFCFC no-repeat 95% center;
+    color: #000;
+    box-shadow: none;
+}
+
+.separadorDirecciones div.fancy-select div.trigger.open:after {
+/*    border-top-color: #7A8498;*/
+}
+
+.separadorDirecciones div.fancy-select ul.options {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    /*left: 0;*/
+    right: 20px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 50;
+    max-height: 200px;
+    overflow: auto;
+    background: #fff;
+    border-top: 1px solid #ccc ;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+    width: 430px;
+    background: #555555;
+    color: #fff;
+    transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+.separadorDirecciones div.fancy-select ul.options.open {
+    visibility: visible;
+    top: 40px;
+    opacity: 1;
+
+    /* have to use a non-visibility transition to prevent this iOS issue (bug?): */
+    /*http://stackoverflow.com/questions/10736478/css-animation-visibility-visible-works-on-chrome-and-safari-but-not-on-ios*/
+    transition: opacity 300ms ease-out, top 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, top 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, top 300ms ease-out;
+}
+
+.separadorDirecciones div.fancy-select ul.options.overflowing {
+    top: auto;
+    bottom: 40px;
+
+    transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out, visibility 300ms ease-out;
+}
+
+.separadorDirecciones div.fancy-select ul.options.overflowing.open {
+    top: auto;
+    bottom: 50px;
+    transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -webkit-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -ms-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+    -o-transition: opacity 300ms ease-out, bottom 300ms ease-out;
+}
+
+.separadorDirecciones div.fancy-select ul.options li {
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'Helevatica';
+    font-weight: normal;
+    font-size: 12px;
+    transition: all 150ms ease-out;
+    -webkit-transition: all 150ms ease-out;
+    -moz-transition: all 150ms ease-out;
+    -ms-transition: all 150ms ease-out;
+    -o-transition: all 150ms ease-out;
+}
+
+.separadorDirecciones div.fancy-select ul.options li.selected {
+    background: #818181;
+    color:  #fff;
+}
+
+.separadorDirecciones div.fancy-select ul.options li.hover {
+    background: #818181;
+    color: #fff;
+}
+
